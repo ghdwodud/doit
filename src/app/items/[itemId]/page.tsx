@@ -113,6 +113,7 @@ export default function ItemDetailPage() {
           id={item.id}
           label={item.name}
           checked={item.isCompleted}
+          textStyle="underline"
           onToggle={handleToggle}
         />
 
@@ -167,7 +168,7 @@ export default function ItemDetailPage() {
             </div>
 
             <div className="flex gap-4 justify-end mt-4">
-              <EditButton onClick={handleUpdate} />
+              <EditButton onClick={handleUpdate} active={item.isCompleted} />
               <DeleteButton onClick={handleDelete} />
             </div>
           </div>
