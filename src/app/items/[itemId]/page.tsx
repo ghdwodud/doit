@@ -159,7 +159,9 @@ export default function ItemDetailPage() {
               className="p-4 w-full h-[311px] rounded-[16px] bg-no-repeat bg-center bg-cover overflow-hidden"
               style={{ backgroundImage: "url('/assets/img/memo.png')" }}
             >
-              <p className="text-sm font-bold text-orange-700 mb-2">Memo</p>
+              <p className="text-sm font-bold text-orange-700 mb-2 text-center">
+                Memo
+              </p>
               <textarea
                 value={memo}
                 onChange={(e) => setMemo(e.target.value)}
