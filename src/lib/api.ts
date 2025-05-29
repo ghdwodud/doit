@@ -10,14 +10,16 @@ const api = axios.create({
 });
 
 // 공통 메서드
-export const get = <T = any>(url: string) =>
+export const get = <T>(url: string): Promise<T> =>
   api.get<T>(url).then((res) => res.data);
-export const post = <T = any>(url: string, data?: any) =>
+
+export const post = <T, D = unknown>(url: string, data?: D): Promise<T> =>
   api.post<T>(url, data).then((res) => res.data);
 
-export const patch = <T = any>(url: string, data?: any) =>
+export const patch = <T, D = unknown>(url: string, data?: D): Promise<T> =>
   api.patch<T>(url, data).then((res) => res.data);
-export const del = <T = any>(url: string) =>
+
+export const del = <T>(url: string): Promise<T> =>
   api.delete<T>(url).then((res) => res.data);
 
 export const uploadImage = async (file: File) => {

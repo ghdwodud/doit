@@ -53,7 +53,7 @@ export default function ItemDetailPage() {
 
   const handleToggle = async () => {
     if (!item) return;
-    const updated = await patch(`/items/${item.id}`, {
+    const updated = await patch<Todo>(`/items/${item.id}`, {
       name: item.name,
       isCompleted: !item.isCompleted,
     });
