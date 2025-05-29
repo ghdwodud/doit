@@ -37,8 +37,9 @@ Next.js 기반의 간단한 투두리스트 웹 애플리케이션입니다.
 
 <br />
 
-## 🖼️ 동작 화면
-https://www.loom.com/share/4681369c805340bfa9cfac0598057087?sid=90de10c7-b59d-4979-bde6-32961ea3e3b7
+## 🖼️ 동작 영상
+https://github.com/user-attachments/assets/52195297-67b2-4895-ae24-daf903d01aba
+
 
 
 <br />
